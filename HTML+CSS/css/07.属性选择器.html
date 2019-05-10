@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* <!-- 
+			为所有title属性的p元素设置一个颜色背景 
+			属性选择器
+				-作用：可以根据元素中的属性和属性值来选取指定的元素
+				-语法:
+					[属性名]选取含有指定属性的元素
+					[属性名="属性值”]选取含有指定属性值的元素
+					[属性名^="属性值"]选取属性值以指定内容的开头的元素
+					[属性名$="属性值"]选取属性值以指定内容的结尾的元素
+					[属性名*="属性值"]选取属性值以包含指定内容的元素
+			 --> */
+		/* p[title]{
+			background-color: yellow;
+		} */
+		/* 
+		 为title属性值是hello的元素设置一个背景颜色
+		 */
+		/* p[title=hello]{
+			background-color: #008000;
+		} */
+		/* 
+		为title属性值以ab开头的元素设置一个背景颜色为黄色 
+		 */
+		p[title^='ab']{
+			
+		}
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		<!-- 
+		 title属性，这个属性可以给任何标签指定
+			当鼠标移入到元素上时，元素中的title属性的值将会做为提示文字显示
+		 -->
+		<p title="我是一个title中的文字">我是一个段落</p>
+		<p >我是一个段落</p>
+		<p >我是一个段落</p>
+		<p >我是一个段落</p>
+		<p title="hello">我是一个段落</p>
+		<p title="abc">我是一个段落</p>
+		<p title="abccs">我是一个段落</p>
+		<p title="abab">我是一个段落</p>
+	</body>
+</html>

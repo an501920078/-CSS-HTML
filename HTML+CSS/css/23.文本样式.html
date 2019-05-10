@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.p1{
+				/* 
+				 * text-transform可以用来设置文本的大小写
+					可选值: 
+							none 默认值,该怎么显示就怎么显示,不做任何处理 
+							capitalize单词的首字母大写,通过空格来识别单词
+							uppercase所有的字母都大写 
+							lowercase所有的字母都小写
+				 */
+				text-transform: uppercase;
+				}
+			.p2{
+				/* 
+				 text-decoration可以用来设置文本的修饰
+					可选值:
+						none:默认值，不添加任何修饰,正常显示 
+						underline为文本添加下划线 
+						overline 为文本添加上划线 
+						line-through为文本添加删除线
+				 */
+				text-decoration: overline;
+			}
+			a{
+				/* 
+				 *超链接会默认添加下划线,也就是超链接的text-decoration的默认值是underline
+					如果需要去除超链接的下划线则需要将该样式设置为none
+				 */
+				text-decoration: none;
+			}
+			.p3{
+				/* 
+				letter-spacing可以指定字符间同距
+					默认0PX
+					
+				word-spacing可以设置单词之间的距离
+					实际上就是设置词与词之间空格的大小
+				 */
+				letter-spacing:1px;
+				word-spacing: 12px;
+			}
+			.p4{
+				/* 
+				 text-align用于设置文本的对齐方式
+					可选值:
+						left默认值,文本靠左对齐
+						right ,文本靠右对齐
+						center ,文本居中对齐
+						justify ,两端对齐
+								通过调整文本之间的空格的大小,来达到一个两端对齐的目的
+				 */
+				text-align: left;
+			}
+			.p5{
+				/* 
+				 text-indent用来设置首行缩进
+				 当给他指定一个正值时，会自动向右侧缩进指定的像素
+				 如果为它指定一个负值,则会向左移动指定的像素
+						通过这种方式可以将一些不想显示的文字隐藏起来
+						当设置字体相关的样式时,一般使用em
+				 */
+				text-indent: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">我是超链接</a>
+		<p class="p1">
+				"We shoudsda dsadadsa dsad dsa dwfda"
+		</p>
+		<p class="p2">
+				"We shoudsda dsadadsa dsad dsa dwfda"
+		</p>
+		<p class="p3">
+				"We shoudsda dsadadsa dsad dsa dwfda"
+		</p>
+		<p class="p4">
+				"We shoudsda dsadadsa dsad dsa dwfda"
+		</p>
+		<h1 class="p4">我是H1</h1>
+	</body>
+</html>
